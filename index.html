@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — YOUR NAME</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>YOUR NAME</h1>
+    <p>Senior Software Engineer · Data Analytics · Cloud Security</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Senior Software Engineer with 4.5+ years of experience in automation, cloud, and data.
+      I build reliable systems and love shipping practical solutions. Currently preparing
+      for a Master's in Germany (Data Analytics / Cloud Security).
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article>
+        <h3>Automated Report Generator</h3>
+        <p>Merge JIRA + DPDM CSVs, validate, and export consolidated Excel report.</p>
+        <a class="btn" href="https://github.com/YOUR_USERNAME/automated-report-generator" target="_blank">View Repo</a>
+      </article>
+
+      <article>
+        <h3>Cloud Security Audit</h3>
+        <p>Static checks for common AWS misconfigurations (S3, SGs, IAM root MFA, password policy).</p>
+        <a class="btn" href="https://github.com/YOUR_USERNAME/cloud-security-audit" target="_blank">View Repo</a>
+      </article>
+
+      <article>
+        <h3>AWS Terraform Starter</h3>
+        <p>Terraform module to spin up an S3 bucket with sane defaults. Easy IaC demo.</p>
+        <a class="btn" href="https://github.com/YOUR_USERNAME/aws-terraform-starter" target="_blank">View Repo</a>
+      </article>
+
+      <article>
+        <h3>Data Viz Analytics</h3>
+        <p>Pandas + Matplotlib script to explore sales data and export charts.</p>
+        <a class="btn" href="https://github.com/YOUR_USERNAME/data-viz-analytics" target="_blank">View Repo</a>
+      </article>
+
+      <article>
+        <h3>REST API Starter (FastAPI)</h3>
+        <p>Minimal FastAPI app with health, items CRUD (in-memory), and a dummy /predict.</p>
+        <a class="btn" href="https://github.com/YOUR_USERNAME/rest-api-starter-fastapi" target="_blank">View Repo</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:YOUR.EMAIL@example.com">YOUR.EMAIL@example.com</a> · 
+       LinkedIn: <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">@YOUR_USERNAME</a></p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> YOUR NAME</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
