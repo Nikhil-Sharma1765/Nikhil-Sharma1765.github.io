@@ -1,313 +1,181 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nikhil Sharma — Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil Sharma | Software Engineer</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Oswald:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
-
-
-  
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
-  <!-- Your CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top border-bottom border-warning-subtle">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Nikhil Sharma<span class="text-accent">.</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-            aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<body class="bg-dark text-light">
 
-<!-- HERO -->
-<header class="hero d-flex align-items-center">
-  <div class="container position-relative">
-    <!-- Giant background word -->
-    <h1 class="hero-bg-text">PORTFOLIO</h1>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Nikhil Sharma</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="row align-items-center g-4">
-      <div class="col-lg-6 order-2 order-lg-1">
-        <h2 class="hero-name display-5 fw-bold text-white mb-2">Nikhil Sharma</h2>
-        <p class="lead text-muted mb-3">Senior Software Engineer</p>
-
-        <p class="hero-typing h4">
-          <span class="text-accent" id="typewriter"></span>
-          <span class="cursor">|</span>
-        </p>
-
-        <div class="mt-4 d-flex gap-2 flex-wrap">
-           <a href="#about" class="btn btn-outline-light"><i class="bi bi-person me-1"></i> About</a>
-             <a href="#skills" class="btn btn-outline-light"><i class="bi bi-lightning me-1"></i> Skills</a>
-          <a href="#projects" class="btn btn-outline-light"><i class="bi bi-rocket-takeoff me-1"></i> View Work</a>
-          <a href="#contact" class="btn btn-accent"><i class="bi bi-envelope me-1"></i> Contact</a>
-        </div>
-      </div>
-
-      <div class="col-lg-6 order-1 order-lg-2 text-center">
-        <!-- Photo framed with orange pill and shadow -->
-        <div class="photo-wrap mx-auto">
-          <img src="profile.png" alt="Nikhil Sharma" class="img-fluid hero-photo" />
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </div>
+  </nav>
 
-  <!-- angled divider -->
-  <div class="divider-angle"></div>
-</header>
-
-<!-- ABOUT -->
-<section id="about" class="section container">
-  <div class="row align-items-center g-4">
-    <div class="col-lg-6">
-      <h3 class="section-title">About Me</h3>
-      <p class="lead">
-        I’m a Senior Software Engineer with 4.5+ years in automation, cloud, and data.
-        I build reliable systems and ship practical solutions.
+  <!-- HERO -->
+  <section class="vh-100 d-flex align-items-center text-center">
+    <div class="container">
+      <img src="profile.png" class="rounded-circle mb-3" width="140" alt="Profile" />
+      <h1 class="fw-bold">Hi, I'm Nikhil Sharma 👋</h1>
+      <p class="lead mt-2">
+        Software Engineer • Ruby on Rails • Cloud & Security Enthusiast
       </p>
-        <div class="timeline">
-  <div class="timeline-item mb-4">
-    <h5 class="text-accent mb-1">Puresoftware <span class="text-muted">— Dec 2025 to Present</span></h5>
-    <p class="mb-1"><em>Senior Software Engineer</em></p>
-    <ul class="mb-2">
-      <li>Design, develop, and maintain scalable web apps using <strong>Ruby on Rails</strong>.</li>
-      <li>Implement <strong>best practices</strong> for clean, maintainable, and efficient code.</li>
-      <li>Work with <strong>CI/CD pipelines, Git, and Docker</strong> for smooth deployments.</li>
-    </ul>
-  </div>
-
-  <div class="timeline-item mb-4">
-    <h5 class="text-accent mb-1">Maropost <span class="text-muted">— Oct 2021 to May 2024</span></h5>
-    <p class="mb-1"><em>Software Engineer</em></p>
-    <ul class="mb-2">
-      <li>Worked on <strong>Ruby on Rails</strong> production environments with RESTful API design.</li>
-      <li>Optimized queries and databases (<strong>PostgreSQL/MySQL</strong>).</li>
-      <li>Wrote automated tests using <strong>RSpec & Minitest</strong>.</li>
-      <li>Implemented CI/CD, Git-based workflows, and applied software design patterns.</li>
-    </ul>
-  </div>
-
-  <div class="timeline-item mb-4">
-    <h5 class="text-accent mb-1">SR Group of Companies <span class="text-muted">— Dec 2018 to Mar 2020</span></h5>
-    <p class="mb-1"><em>Technical Support Engineer (RoR)</em></p>
-    <p class="small text-muted">
-    </p>
-    <ul class="mb-2">
-      <li>Maintained ERP software to ensure <strong>high performance & availability</strong>.</li>
-      <li>Debugged & resolved production issues using <strong>React + Ruby on Rails</strong>.</li>
-      <li>Provided technical support to school administrators, teachers, and other users.</li>
-    </ul>
-  </div>
-</div>
-      <ul class="list-unstyled mt-3">
-        <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Automation & backend scripting</li>
-        <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>AWS & cloud security hardening</li>
-        <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Data analytics & reporting</li>
-      </ul>
+      <a href="#projects" class="btn btn-warning mt-3">View My Work</a>
     </div>
-    <div class="col-lg-6">
-      <div class="about-card p-4">
-        <h5 class="text-uppercase text-accent mb-3">Current Focus</h5>
-        <p class="mb-1">• Data Analytics / Cloud Security</p>
-        <p class="mb-1">• Sharpening: system design, IaC, security auditing</p>
-        <p class="mb-0">• On the side: clean, documented open-source utilities</p>
-      </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section bg-dark-2 py-5">
+    <div class="container">
+      <h3 class="section-title text-center">About Me</h3>
+      <p class="text-center mt-3">
+        I am a Software Engineer with 4+ years of experience in Ruby on Rails,
+        frontend development, and cloud-based systems. I enjoy building scalable
+        applications and security-focused solutions using AWS and GCP.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section bg-dark-2">
-  <div class="container">
-    <h3 class="section-title text-center text-white">Projects</h3>
-    <div class="row g-4 mt-2">
-      <!-- Card -->
-      <div class="col-md-6 col-lg-4">
-        <article class="card project-card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Automated Report Generator</h5>
-            <p class="card-text">Merge JIRA + DPDM CSVs, validate, and export consolidated Excel report.</p>
-            <a href="https://github.com/Nikhil-Sharma1765/automated-report-generator" target="_blank" class="stretched-link">View repo</a>
-          </div>
-        </article>
-      </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="section bg-dark py-5">
+    <div class="container">
+      <h3 class="section-title text-center text-white">Projects</h3>
 
-      <div class="col-md-6 col-lg-4">
-        <article class="card project-card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Cloud Security Audit</h5>
-            <p class="card-text">Static checks for AWS misconfigurations (S3, SGs, IAM root MFA, password policy).</p>
-            <a href="https://github.com/Nikhil-Sharma1765/cloud-security-audit" target="_blank" class="stretched-link">View repo</a>
-          </div>
-        </article>
-      </div>
+      <div class="row g-4 mt-4">
 
-      <div class="col-md-6 col-lg-4">
-        <article class="card project-card h-100">
-          <div class="card-body">
-            <h5 class="card-title">AWS Terraform Starter</h5>
-            <p class="card-text">Terraform module to spin up an S3 bucket with sane defaults. Easy IaC demo.</p>
-            <a href="https://github.com/Nikhil-Sharma1765/aws-terraform-starter" target="_blank" class="stretched-link">View repo</a>
-          </div>
-        </article>
-      </div>
+        <!-- MULTI-CLOUD PROJECT -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card project-card h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title">
+                ☁️ Multi-Cloud Security Monitoring Dashboard
+              </h5>
 
-      <div class="col-md-6 col-lg-4">
-        <article class="card project-card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Data Viz Analytics</h5>
-            <p class="card-text">Pandas + Matplotlib script to explore sales data and export charts.</p>
-            <a href="https://github.com/Nikhil-Sharma1765/data-viz-analytics" target="_blank" class="stretched-link">View repo</a>
-          </div>
-        </article>
-      </div>
+              <p class="card-text">
+                SIEM-style security dashboard that analyzes AWS CloudTrail
+                and GCP Audit Logs to detect IAM changes, destructive actions,
+                and suspicious activities.
+              </p>
 
-      <div class="col-md-6 col-lg-4">
-        <article class="card project-card h-100">
-          <div class="card-body">
-            <h5 class="card-title">REST API Starter (FastAPI)</h5>
-            <p class="card-text">Minimal FastAPI app with health, items CRUD (in-memory), and a dummy /predict.</p>
-            <a href="https://github.com/Nikhil-Sharma1765/rest-api-starter-fastapi" target="_blank" class="stretched-link">View repo</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
+              <p class="small text-muted">
+                <strong>Tech:</strong> Python, Streamlit, Pandas, AWS, GCP
+              </p>
 
-<!-- SKILLS -->
-<section id="skills" class="section container">
-  <h3 class="section-title text-center">Core Skills</h3>
-  <div class="row text-center g-4 mt-2">
-
-
-      <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="48" alt="Python">
-        <p class="mt-2 mb-0">Python</p>
-      </div>
-    </div>
-
-      <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" height="48" alt="Ruby on Rails">
-        <p class="mt-2 mb-0">Ruby on Rails</p>
-      </div>
-    </div>
-
-         <div class="col-6 col-md-3">
-  <div class="skill-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" height="48" alt="AWS">
-    <p class="mt-2 mb-0">AWS</p>
-  </div>
-</div>
-
-      <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="48" alt="PostgreSQL">
-        <p class="mt-2 mb-0">PostgreSQL</p>
-      </div>
-    </div>
-
-    <!-- MySQL -->
-    <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="48" alt="MySQL">
-        <p class="mt-2 mb-0">MySQL</p>
-      </div>
+              <a
+                href="https://github.com/Nikhil-Sharma1765/multi-cloud-security-monitor"
+                target="_blank"
+                class="stretched-link"
+              >
+                View GitHub Repo
+              </a>
+            </div>
+          </article>
         </div>
 
-      <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="48" alt="Git">
-        <p class="mt-2 mb-0">Git</p>
-      </div>
-    </div>
-      
-       <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="48" alt="Docker">
-        <p class="mt-2 mb-0">Docker</p>
-      </div>
-    </div>
+        <!-- SAMPLE PROJECT 1 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Ruby on Rails SaaS App</h5>
+              <p class="card-text">
+                Built a multi-tenant SaaS application with authentication,
+                role-based access, and REST APIs.
+              </p>
+              <p class="small text-muted">
+                <strong>Tech:</strong> Ruby on Rails, PostgreSQL, Bootstrap
+              </p>
+            </div>
+          </article>
+        </div>
 
-      
-      
-      <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="48" alt="HTML5">
-        <p class="mt-2 mb-0">HTML5</p>
-      </div>
-    </div>
-      
-    <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="48" alt="CSS3">
-        <p class="mt-2 mb-0">CSS3</p>
-      </div>
-    </div>
-    
-      <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="48" alt="JavaScript">
-        <p class="mt-2 mb-0">JavaScript</p>
-      </div>
-    </div>
-    
-      <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="48" alt="Bootstrap">
-        <p class="mt-2 mb-0">Bootstrap</p>
-      </div>
-    </div>
-      
-  </div>
-</section>
+        <!-- SAMPLE PROJECT 2 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Frontend Dashboard</h5>
+              <p class="card-text">
+                Interactive dashboard with charts, filters, and API integration.
+              </p>
+              <p class="small text-muted">
+                <strong>Tech:</strong> React, JavaScript, CSS
+              </p>
+            </div>
+          </article>
+        </div>
 
-<!-- CONTACT -->
-<section id="contact" class="section bg-dark-2">
-  <div class="container">
-    <h3 class="section-title text-center text-white">Contact</h3>
-    <p class="text-center text-white-50 mb-4">Let’s connect for opportunities and collaborations.</p>
-    <div class="d-flex justify-content-center gap-3">
-      <a class="btn btn-accent" href="mailto:nikhilsharma1765@gmail.com"><i class="bi bi-envelope me-1"></i>Email</a>
-      <a class="btn btn-outline-light" target="_blank" href="https://www.linkedin.com/in/nikhil-sharma0410"><i class="bi bi-linkedin me-1"></i>LinkedIn</a>
-      <a class="btn btn-outline-light" target="_blank" href="https://github.com/Nikhil-Sharma1765"><i class="bi bi-github me-1"></i>GitHub</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="py-4 bg-black text-center text-white-50">
-  © <span id="year"></span> Nikhil Sharma
-</footer>
+  <!-- SKILLS -->
+  <section id="skills" class="section bg-dark-2 py-5">
+    <div class="container">
+      <h3 class="section-title text-center">Skills</h3>
+      <div class="row text-center mt-4">
+        <div class="col">Ruby on Rails</div>
+        <div class="col">JavaScript</div>
+        <div class="col">React</div>
+        <div class="col">AWS</div>
+        <div class="col">GCP</div>
+        <div class="col">SQL</div>
+      </div>
+    </div>
+  </section>
 
-<!-- JS: Bootstrap + your script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+  <!-- CONTACT -->
+  <section id="contact" class="section bg-dark py-5">
+    <div class="container text-center">
+      <h3 class="section-title">Contact</h3>
+      <p class="mt-3">📧 kumarnikhil1431@gmail.com</p>
+      <p>📍 Bangalore, India</p>
+      <p>
+        <a
+          href="https://github.com/Nikhil-Sharma1765"
+          target="_blank"
+          class="text-warning"
+        >
+          GitHub Profile
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3 bg-black">
+    <small>© 2025 Nikhil Sharma</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
